@@ -9,20 +9,20 @@
 #include "StringViewManager.h"
 
 int main() {
-  const char* const FILE_NAME = "res/data.in";
-  const char* const DATA1_NAME = "data1.out";
-  const char* const DATA2_NAME = "data2.out";
-  const char* const DATA3_NAME = "data3.out";
+	const char* const FILE_NAME = "res/data.in";
+	const char* const DATA1_NAME = "data1.out";
+	const char* const DATA2_NAME = "data2.out";
+	const char* const DATA3_NAME = "data3.out";
 
-  StringViewManager manager(FILE_NAME);
+	StringViewManager manager(FILE_NAME);
 
-  manager.SortFromLeft();
-  manager.WriteCurrentDataToFile(DATA1_NAME);
+	manager.SortFromLeft();
+	manager.WriteCurrentDataToFile(DATA1_NAME);
 
-  manager.SortFromRight();
-  manager.WriteCurrentDataToFile(DATA2_NAME);
+	manager.SortFromRight();
+	manager.WriteCurrentDataToFile(DATA2_NAME);
 
-  manager.WriteOriginalDataToFIle(DATA3_NAME);
+	manager.WriteOriginalDataToFIle(DATA3_NAME);
 
-  return 0;
+	return 0;
 }
